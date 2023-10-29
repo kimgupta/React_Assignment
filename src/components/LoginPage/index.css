@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    scroll-behavior: smooth;
+}
+
+section{
+    transition: ease 1s;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-card{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left-card{
+
+    position: relative;
+    min-height:96vh;
+    width: 50%;
+    border-radius: 4px;
+    background-image: linear-gradient(rgba(64, 159, 71,1), rgba(108, 179, 68,1));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-card div {
+    margin: 1.5rem;
+}
+.left-card div h1{
+    color: white;
+    font-size: 2.4rem;
+    line-height: 54px;
+}
+.left-card div p{
+    color: white;
+    font-size: 1.4rem;
+    padding-bottom: 4rem;
+}
+
+/* Right Card design */
+
+.right-card{
+    min-height: 96vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sun-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem ;
+    border-radius: 2rem ;
+    border: none;
+    cursor: pointer;
+}
+.sun-btn img{
+    width: 20px;
+}
+.footer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    bottom: 0%;
+    left: 20%;
+    right: 20%;
+    color: #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.logo{
+    width: 175px;
+}
+
+.para{
+    font-size: large;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:6rem;
+}
+.input-feild-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:2rem;  
+}
+.login-btn{
+    padding: 1rem 0;
+    background-color:#65B127;
+    width:100%;
+    border: 1px solid #65B127;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 5px 8px 20px #c1c1c1;
+}
+/* for inserting icons in input fields */
+.input-field-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+
+  }
+  .input-field:focus{
+    outline-color: #65B127;
+  }
+
+  .user-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* Your existing CSS styles */
+/* ... */
+
+/* Dark theme styles */
+.dark-theme {
+    transition: ease 1s;
+    /* Define your dark theme styles here */
+    /* For example, you can change the background color, text color, etc. */
+    background-color: rgb(18, 27, 21);
+    color: #ACACAC;
+  }
+  .dark-theme .left-card {
+    /* Define any additional dark theme styles for left-card here */
+    /* For example, you can change the text color or other properties */
+    background-image: linear-gradient(rgba(40, 40, 40, 0.2), rgba(40, 40, 40, 0.2));
+  }
+  .dark-theme .sun-btn{
+    fill: #ffff;
+    background-color: rgba(172, 172, 172,0.2);
+  }
+  
+  .dark-theme .login-btn{
+    padding: 1rem 0;
+    background-color:#65B127;
+    width:100%;
+    border: 1px solid #65B127;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+/* ffor responsiveness */
+  @media screen and (max-width: 1090px) {
+    #left-card{
+        display: none;
+
+    }
+    .right-card{
+        width: 90%;
+    }
+    
+  }
+  @media screen and (max-width: 610px) {
+    .footer p{
+        font-size: 9px;
+        cursor: pointer;
+    }
+    
+  }
